@@ -48,7 +48,8 @@ describe("checks there is an Error message for invalid input", () => {
           fireEvent.blur(fields[0]);
         });
         expect(
-          fields[0].nextElementSibling.tagName.toLowerCase() === "div" &&
+          fields[0].nextElementSibling &&
+            fields[0].nextElementSibling.tagName.toLowerCase() === "div" &&
             fields[0].nextElementSibling.textContent ===
               listClone[component]["data-error-message"]
         ).toBeTruthy();

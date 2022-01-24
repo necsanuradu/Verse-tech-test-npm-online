@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Formatron, Input, Textarea } from "formidable-forms-state";
+import { Formatron, Input, Textarea } from "formidable-forms-state/lib/index";
 import SuccessSubmit from "./form-success-submit";
 import ConsentMessage from "./consent-message";
 

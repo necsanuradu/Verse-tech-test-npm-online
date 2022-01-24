@@ -38,7 +38,8 @@ describe("checks there is an Error message required not present input", () => {
           fireEvent.click(submitButton);
         });
         expect(
-          fields[0].nextElementSibling.tagName.toLowerCase() === "div"
+          fields[0].nextElementSibling &&
+            fields[0].nextElementSibling.tagName.toLowerCase() === "div"
         ).toBeTruthy();
       });
     });
