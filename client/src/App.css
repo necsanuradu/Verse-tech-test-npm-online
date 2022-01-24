@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+input:not(:placeholder-shown):not(.invalid),
+textarea:not(:placeholder-shown):not(.invalid) {
+  background-color: #edf7e9 !important;
+  border-color: #0a6018;
+  box-shadow: 0 0 0px 1000px #edf7e9 inset;
+  -webkit-box-shadow: 0 0 0px 1000px #edf7e9 inset;
+}
+input:placeholder-shown,
+textarea:placeholder-shown {
+  border-color: #5555e4;
+}
+input + div,
+textarea + div {
+  color: #f0453f;
+  font-size: 0.8rem;
+  text-align: left;
+  padding-left: 0.5rem;
+}
+input,
+textarea {
+  margin-top: 0.625rem;
+}
+
+textarea {
+  resize: none !important;
+}
+
+.clearForm {
+  text-align: left !important;
+  color: var(--bs-primary) !important;
+  text-decoration: underline;
+}
+.clearForm:focus {
+  box-shadow: none !important;
+}
+.clearForm:hover {
+  color: #303030 !important;
+}
+.consentForm {
+  white-space: pre-line;
+  text-align: left;
+  font-size: 0.6rem;
+}
+input.invalid,
+textarea.invalid {
+  background-color: #fee6d8 !important;
+  border-color: #f0453f !important;
+  box-shadow: 0 0 0px 1000px #fee6d8 inset;
+  -webkit-box-shadow: 0 0 0px 1000px #fee6d8 inset;
+}
+
+.nav-link {
+  text-decoration: underline;
+}
+#success-submit {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
